@@ -18,9 +18,11 @@ initial begin
 	$dumpvars(0,alu_tb);
 	#10;
 	
+	a = $random%4; b = $random%4;
+
 	repeat(5)
         begin
-    	{s,m,cin} =$random%6; a = $random%4; b = $random%4; #10;
+    	{s,m,cin} =$random%6;  #10;
         end
 	
 	$finish;
